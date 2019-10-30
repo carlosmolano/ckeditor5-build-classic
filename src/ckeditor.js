@@ -29,6 +29,10 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
+import Font from '@ckeditor/ckeditor5-font/src/font';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -55,30 +59,45 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Highlight,
+	HorizontalLine,
+	Font
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading',
-			'|',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'|',
-			'indent',
-			'outdent',
-			'|',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo',
+            'heading',
+            '|',
+            'fontsize',
+            'fontfamily',
+            '|',
+            'bold',
+            'italic',
+            'highlight',
+            '|',
+            'fontcolor',
+            'fontbackgroundcolor',
+            '|',
+			'alignment',
+			'horizontalLine',
+            '|',
+            'numberedlist',
+            'bulletedlist',
+            '|',
+            'link',
+            'blockquote',
+            'imageupload',
+            'inserttable',
+            'mediaembed',
+            '|',
+            'removehighlight',
+            'removeformat',
+            '|',
+            'undo',
+            'redo',
 		]
 	},
 	image: {

@@ -1,6 +1,6 @@
 {
   "name": "@gvreddy04/ckeditor5-build-classic-all-features",
-  "version": "15.8.0",
+  "version": "15.9.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -36,7 +36,10 @@
     "@ckeditor/ckeditor5-easy-image": "^15.0.0",
     "@ckeditor/ckeditor5-editor-classic": "^15.0.0",
     "@ckeditor/ckeditor5-essentials": "^15.0.0",
+    "@ckeditor/ckeditor5-font": "^15.0.0",
     "@ckeditor/ckeditor5-heading": "^15.0.0",
+    "@ckeditor/ckeditor5-highlight": "^15.0.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^15.0.0",
     "@ckeditor/ckeditor5-image": "^15.0.0",
     "@ckeditor/ckeditor5-indent": "^15.0.0",
     "@ckeditor/ckeditor5-link": "^15.0.0",
