@@ -1,5 +1,5 @@
-CKEditor 5 classic editor build
-========================================
+CKEditor 5 classic editor build with all features 
+====================================================
 
 [![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-build-classic.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)
 [![Build Status](https://travis-ci.org/ckeditor/ckeditor5-build-classic.svg?branch=master)](https://travis-ci.org/ckeditor/ckeditor5-build-classic)
@@ -9,7 +9,8 @@ CKEditor 5 classic editor build
 
 The classic editor build for CKEditor 5. Read more about the [classic editor build](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/overview.html#classic-editor) and see the [demo](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html).
 
-![CKEditor 5 classic editor build screenshot](https://imgur.com/a/aXswskV)
+![CKEditor 5 classic editor build screenshot](https://i.imgur.com/SMeqcNC.png)
+
 
 ## Documentation
 
@@ -25,7 +26,7 @@ See:
 First, install the build from npm:
 
 ```bash
-npm install --save @ckeditor/ckeditor5-build-classic
+npm install save @gvreddy04/ckeditor5-build-classic-all-features
 ```
 
 And use it in your website:
