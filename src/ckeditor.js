@@ -38,7 +38,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import Font from '@ckeditor/ckeditor5-font/src/font';
-//import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -76,7 +76,7 @@ ClassicEditor.builtinPlugins = [
 	Highlight,
 	HorizontalLine,
 	Font,
-	//CodeBlock
+	CodeBlock
 ];
 
 // Editor configuration.
@@ -94,8 +94,10 @@ ClassicEditor.defaultConfig = {
 			'strikethrough',
 			'subscript',
 			'superscript',
-			'code',
 			'highlight',
+			'|',
+			'code',
+			'codeBlock',
 			'|',
 			'fontcolor',
 			'fontbackgroundcolor',
@@ -113,14 +115,12 @@ ClassicEditor.defaultConfig = {
 			'imageupload',
 			'inserttable',
 			'mediaembed',
-			'|',
-			'removehighlight',
-			'removeformat',
+			//'|',
+			//'removehighlight',
+			//'removeformat',
 			'|',
 			'undo',
-			'redo',
-			'|',
-			'codeBlock'
+			'redo'
 		]
 	},
 	image: {
