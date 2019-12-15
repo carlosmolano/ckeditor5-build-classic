@@ -27,7 +27,6 @@ import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
-//import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
@@ -38,7 +37,9 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import Font from '@ckeditor/ckeditor5-font/src/font';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
+//import MathType from '@wiris/mathtype-ckeditor5';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -65,7 +66,7 @@ ClassicEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	Indent,
-	//Alignment,
+	Alignment,
 	Link,
 	List,
 	MediaEmbed,
@@ -76,7 +77,8 @@ ClassicEditor.builtinPlugins = [
 	Highlight,
 	HorizontalLine,
 	Font,
-	CodeBlock
+	CodeBlock,
+	//MathType
 ];
 
 // Editor configuration.
@@ -84,9 +86,6 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
-			'|',
-			'fontsize',
-			'fontfamily',
 			'|',
 			'bold',
 			'italic',
@@ -96,31 +95,37 @@ ClassicEditor.defaultConfig = {
 			'superscript',
 			'highlight',
 			'|',
-			'code',
-			'codeBlock',
-			'|',
-			'fontcolor',
-			'fontbackgroundcolor',
+			'numberedlist',
+			'bulletedlist',
 			'|',
 			'alignment',
 			'indent',
 			'outdent',
 			'horizontalline',
 			'|',
-			'numberedlist',
-			'bulletedlist',
+			'fontcolor',
+			'fontbackgroundcolor',
+			'|',
+			'code',
+			'codeBlock',
+			//'|',
+			//'MathType',
+			//'ChemType',
 			'|',
 			'link',
 			'blockquote',
 			'imageupload',
 			'inserttable',
 			'mediaembed',
+			'|',
+			'fontsize',
+			'fontfamily',
 			//'|',
 			//'removehighlight',
 			//'removeformat',
 			'|',
 			'undo',
-			'redo'
+			'redo',
 		]
 	},
 	image: {
