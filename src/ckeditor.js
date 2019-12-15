@@ -12,11 +12,11 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-//import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
-//import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
-//import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
-//import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
-//import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -27,6 +27,7 @@ import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
+//import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
@@ -38,7 +39,6 @@ import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 //import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
-//import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -50,12 +50,11 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
-	//Underline,
-	//Strikethrough,
-	//Alignment,
-	//Code,
-	//Subscript,
-	//Superscript,
+	Underline,
+	Strikethrough,
+	Subscript,
+	Superscript,
+	Code,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
@@ -66,6 +65,7 @@ ClassicEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	Indent,
+	//Alignment,
 	Link,
 	List,
 	MediaEmbed,
@@ -92,9 +92,9 @@ ClassicEditor.defaultConfig = {
 			'italic',
 			'underline',
 			'strikethrough',
-			'code',
 			'subscript',
 			'superscript',
+			'code',
 			'highlight',
 			'|',
 			'fontcolor',
@@ -120,7 +120,7 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'|',
-			//'codeBlock'
+			'codeBlock'
 		]
 	},
 	image: {
